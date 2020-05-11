@@ -42,8 +42,14 @@ body {
     margin-bottom: 2%;
 }
 
+.navbar-scroll-up {
+    display: none;
+    align-items: center;
+}
+
 .scroll-up {
     margin: 4px auto;
+    align-self: center;
 }
 
 #scroll-up-dark {

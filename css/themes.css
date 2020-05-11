@@ -10,6 +10,11 @@
     width: 30px;
     border-radius: 5px;
 }
+
+.theme-button:active {
+    outline: none;
+}
+
 .dark-theme-button {
     background-color: #414141;
 }

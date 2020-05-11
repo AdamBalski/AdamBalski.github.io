@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="body container-fluid bg-light" id="body">
+<body class="body container-fluid bg-light" onscroll="makeScrollUpAppear();" id="body">
 
     <!-- White theme -->
     <div class="bg-light" id="white-theme">
@@ -22,7 +22,7 @@
                 <strong class="header-caption">Życie po epidemii</strong>
             </div>
             <div class="theme dark-theme">
-                Theme: 
+                Motyw: 
                 <button onclick="dark()" class="theme-button dark-theme-button"></button>
             </div>
         </nav>
@@ -32,8 +32,7 @@
             <div class="content col-12 col-md-10" id="white-content"></div>
         </div>
 
-        <nav class="navbar navbar-light navbar-expand row">
-            <div class="margin"></div>
+        <nav class="navbar navbar-light navbar-expand navbar-scroll-up row">
             <button class="btn btn-light scroll-up" id="scroll-up-light" onclick="scrollUp();">Przewiń w górę</div>
         </nav>
     </div>
@@ -46,7 +45,7 @@
                 <strong class="header-caption">Życie po epidemii</strong>
             </div>
             <div class="theme white-theme">
-                Theme: 
+                Motyw: 
                 <button onclick="white()" class="theme-button white-theme-button"></button>
             </div>
         </nav>
@@ -56,8 +55,7 @@
             <div class="content col-12 col-md-10" id="dark-content"></div>
         </div>
 
-        <nav class="navbar navbar-dark navbar-expand row">
-            <div class="margin"></div>
+        <nav class="navbar navbar-dark navbar-expand navbar-scroll-up row">
             <button class="btn btn-dark scroll-up" id="scroll-up-dark"  onclick="scrollUp();">Przewiń w górę</div>
         </nav>
     </div>
