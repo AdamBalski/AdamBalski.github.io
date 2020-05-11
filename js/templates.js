@@ -19,5 +19,16 @@ function readTextFile(file)
     return result;
 }
 
-content = readTextFile('templates/index-template.html');
-$('.content').html(content);
+function setContent(file) {
+    var content = readTextFile('templates/' + file + '-template.html');
+    $('.content').html(content);
+}
+
+function setTitle(title) {
+    $('title').text(title);
+}
+
+function setContentAndTitle(file, title) {
+    setContent(file);
+    setTitle(title);
+}

@@ -4,6 +4,8 @@ html {
 
     padding-top: 0 !important;
     margin: 0 !important;
+
+    scroll-behavior: smooth;
 }
 
 body {
@@ -38,6 +40,14 @@ body {
 .content-wrapper {
     margin-top: 1%;
     margin-bottom: 2%;
+}
+
+.scroll-up {
+    margin: 4px auto;
+}
+
+#scroll-up-dark {
+    background: #555;
 }
 
 ::-webkit-scrollbar {

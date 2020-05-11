@@ -28,9 +28,14 @@
         </nav>
 
         <div class="content-wrapper row col-12">
-            <div class="content-aligner col-0 col-md-1"></div>
+            <div class="margin col-0 col-md-1"></div>
             <div class="content col-12 col-md-10" id="white-content"></div>
         </div>
+
+        <nav class="navbar navbar-light navbar-expand row">
+            <div class="margin"></div>
+            <button class="btn btn-light scroll-up" id="scroll-up-light" onclick="scrollUp();">Przewiń w górę</div>
+        </nav>
     </div>
 
     <!-- Dark theme -->
@@ -39,23 +44,35 @@
             <div class="header">
                 <img class="logo" src="img/coronavirus-image.png">
                 <strong class="header-caption">Życie po epidemii</strong>
-            </div>            <div class="theme white-theme">
+            </div>
+            <div class="theme white-theme">
                 Theme: 
                 <button onclick="white()" class="theme-button white-theme-button"></button>
             </div>
         </nav>
 
         <div class="content-wrapper row col-12">
-            <div class="content-aligner col-0 col-md-1"></div>
+            <div class="margin col-0 col-md-1"></div>
             <div class="content col-12 col-md-10" id="dark-content"></div>
         </div>
+
+        <nav class="navbar navbar-dark navbar-expand row">
+            <div class="margin"></div>
+            <button class="btn btn-dark scroll-up" id="scroll-up-dark"  onclick="scrollUp();">Przewiń w górę</div>
+        </nav>
     </div>
 
+    <div></div>
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/min-bootstrap.js"></script>
 
-    <script src="js/content.js"></script>
+    <script src="js/templates.js"></script>
     <script src="js/themes.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        setContentAndTitle("index", "Życie po pandemii");
+    </script>
 </body>
 </html>
