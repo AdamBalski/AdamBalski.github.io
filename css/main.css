@@ -56,6 +56,77 @@ body {
     background: #555;
 }
 
+.nav-links {
+    margin-left: -5px;
+}
+
+#nav-light-links {
+    background-color: #eeeeee;
+}
+
+#nav-dark-links {
+    background-color: #343a40;
+}
+
+.scroll-icon {
+    margin-left: 5px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.scroll-light-icon {
+    background-color: #ccc;
+}
+
+.scroll-dark-icon {
+    background-color: #333; 
+}
+
+.scroll-icon:hover {
+    outline-style: auto;
+    outline-width: 2px;
+}
+
+.scroll-light-icon:hover {
+    outline-color: #000;
+}
+
+.scroll-dark-icon:hover {
+    outline-color: #FFF;
+}
+
+.link {
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+#link-light {
+    background-color: #ccc;
+}
+
+#link-dark {
+    background-color: #333; 
+    /* TODO */
+}
+
+#link-light:hover {
+    outline-color: #000;
+}
+
+#link-dark:hover {
+    outline-color: #FFF;
+}
+
+.link:hover {
+    outline-style: auto;
+    outline-width: 2px;
+}
+
+svg {
+    outline-style: hidden;
+    margin: 0;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }

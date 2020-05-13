@@ -1,7 +1,7 @@
 .bg-dark {
     color: #FFF;
 }
-.bg-white {
+.bg-light {
     color: #000;
 }
 
@@ -18,11 +18,11 @@
 .dark-theme-button {
     background-color: #414141;
 }
-.white-theme-button {
+.light-theme-button {
     background-color: rgb(223, 222, 222);
 }
 
-.white-theme {
+.light-theme {
     color: rgb(223, 222, 222);
 }
 .dark-theme {

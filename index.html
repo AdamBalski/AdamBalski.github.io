@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Życie po pandemii</title>
-    <link rel="shortcut icon" href="img/coronavirus-image.png"/>
+    <link rel="shortcut icon" id="shortcut-icon" href="img/coronavirus-image.png"/>
 
     <link rel="stylesheet" href="css/min-bootstrap.css">
+    
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/themes.css">
-
 </head>
 
 <body class="body container-fluid bg-light" onscroll="makeScrollUpAppear();" id="body">
 
-    <!-- White theme -->
-    <div class="bg-light" id="white-theme">
+    <!-- light theme -->
+    <div class="bg-light" id="light-theme">
         <nav class="navbar navbar-light navbar-expand row">
             <div class="header">
                 <img class="logo" src="img/coronavirus-image.png">
@@ -29,7 +29,7 @@
 
         <div class="content-wrapper row col-12">
             <div class="margin col-0 col-md-1"></div>
-            <div class="content col-12 col-md-10" id="white-content"></div>
+            <div class="content col-12 col-md-10" id="light-content"></div>
         </div>
 
         <nav class="navbar navbar-light navbar-expand navbar-scroll-up row">
@@ -44,9 +44,9 @@
                 <img class="logo" src="img/coronavirus-image.png">
                 <strong class="header-caption">Życie po epidemii</strong>
             </div>
-            <div class="theme white-theme">
+            <div class="theme light-theme">
                 Motyw: 
-                <button onclick="white()" class="theme-button white-theme-button"></button>
+                <button onclick="light()" class="theme-button light-theme-button"></button>
             </div>
         </nav>
 
@@ -60,17 +60,17 @@
         </nav>
     </div>
 
-    <div></div>
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/min-bootstrap.js"></script>
 
-    <script src="js/templates.js"></script>
+    <script src="js/util.js"></script>
     <script src="js/themes.js"></script>
+    <script src="js/templates.js"></script>
     <script src="js/main.js"></script>
 
     <script>
-        setContentAndTitle("index", "Życie po pandemii");
+        setContent();
     </script>
 </body>
 </html>
