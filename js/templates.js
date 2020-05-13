@@ -28,7 +28,7 @@ function getIntroBar(theme, names) {
 function getArticle(name) {
     let content = readTextFile("articles/" + name +"-article.html", INDENT);
     let result = 
-    '<div class="article" id="#NAME#">'  + 
+    '<div class="article #NAME#">'  + 
     '#CONTENT#'  + 
     '</div>' ; 
 
@@ -61,7 +61,7 @@ function readTextFile(file, indent) {
 function getNavbar(theme, names) {
     let buttons = getButtons(theme, names, INDENT);
     let navbar =
-    '<nav class="navbar navbar-#THEME# nav-links navbar-expand row" id="nav-#THEME#-links">  '  + 
+    '<nav class="navbar navbar-#THEME# nav-links navbar-expand row nav-#THEME#-links">  '  + 
     '   <button class="btn scroll-icon scroll-#THEME#-icon" onclick="scrollUp();">' +
     '       <svg class="bi bi-arrow-up" width="1em" height="1em" viewBox="0 0 16 16" fill="#COLOR#" xmlns="http://www.w3.org/2000/svg">  '  + 
     '           <path fill-rule="evenodd" d="M8 3.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V4a.5.5 0 01.5-.5z" clip-rule="evenodd"/>  '  + 
@@ -95,7 +95,7 @@ function getButtons(theme, names, indent) {
 }
 
 function getButton(theme, name, indent) {
-    let button = ''.repeat(indent) + '<a href = "##NAME#" class="link btn btn-#THEME#" id="link-#THEME#">#NAME#</a>';
+    let button = ''.repeat(indent) + '<a href = "##NAME#" class="link btn btn-#THEME# link-#THEME#">#NAME#</a>';
 
     button = replaceAllOccurrences(button, "#THEME#", theme);
     button = replaceAllOccurrences(button, "#NAME#", name);

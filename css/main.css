@@ -1,4 +1,4 @@
-html {
+#html {
     height: 100%;
     width: 100%;
 
@@ -8,7 +8,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+#body {
     height: 100%;
     width: 100%;
 
@@ -42,6 +42,10 @@ body {
     margin-bottom: 2%;
 }
 
+.article {
+    margin-top: 10px;
+}
+
 .navbar-scroll-up {
     display: none;
     align-items: center;
@@ -52,20 +56,21 @@ body {
     align-self: center;
 }
 
-#scroll-up-dark {
+.scroll-up-dark {
     background: #555;
 }
 
 .nav-links {
     margin-left: -5px;
+    margin-bottom: 30px;
 }
 
-#nav-light-links {
-    background-color: #eeeeee;
+.nav-light-links {
+    background-color: #eeeeee !important;
 }
 
-#nav-dark-links {
-    background-color: #343a40;
+.nav-dark-links {
+    background-color: #343a40 !important;
 }
 
 .scroll-icon {
@@ -93,6 +98,7 @@ body {
 
 .scroll-dark-icon:hover {
     outline-color: #FFF;
+    background-color: #000 !important;
 }
 
 .link {
@@ -100,20 +106,20 @@ body {
     font-weight: 500;
 }
 
-#link-light {
+.link-light {
     background-color: #ccc;
 }
 
-#link-dark {
+.link-dark {
     background-color: #333; 
     /* TODO */
 }
 
-#link-light:hover {
+.link-light:hover {
     outline-color: #000;
 }
 
-#link-dark:hover {
+.link-dark:hover {
     outline-color: #FFF;
 }
 
