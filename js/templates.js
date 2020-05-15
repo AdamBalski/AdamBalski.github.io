@@ -28,7 +28,7 @@ function getIntroBar(theme, names) {
 function getArticle(name) {
     let content = readTextFile("articles/" + name +"-article.html", INDENT);
     let result = 
-    '<div class="article #NAME#">'  + 
+    '<div class="article" id="#NAME#">'  + 
     '#CONTENT#'  + 
     '</div>' ; 
 
