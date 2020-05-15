@@ -14,7 +14,7 @@ function getContent(names, theme) {
     let result = getIntroBar(theme, names) + "\n";
 
     for(i = 0; i < names.length; i++) {
-        result = result + getArticle(names[i]) + "\n";
+        result = result + getArticle(names[i], theme) + "\n";
         result = result + getNavbar(theme, names) + "\n";
     }
 
@@ -22,16 +22,17 @@ function getContent(names, theme) {
 }
 
 function getIntroBar(theme, names) {
-    return getArticle("index") + getNavbar(theme, names);
+    return getArticle("index", theme) + getNavbar(theme, names);
 }
 
-function getArticle(name) {
+function getArticle(name , theme) {
     let content = readTextFile("articles/" + name +"-article.html", INDENT);
     let result = 
-    '<div class="article" id="#NAME#">'  + 
+    '<div class="article" id="#NAME#-#THEME#">'  + 
     '#CONTENT#'  + 
     '</div>' ; 
 
+    result = replaceAllOccurrences(result, "#THEME#", theme);
     result = replaceAllOccurrences(result, "#NAME#", name);
     result = replaceAllOccurrences(result, "#CONTENT#", content);
 
@@ -95,7 +96,7 @@ function getButtons(theme, names, indent) {
 }
 
 function getButton(theme, name, indent) {
-    let button = ''.repeat(indent) + '<a href = "##NAME#" class="link btn btn-#THEME# link-#THEME#">#NAME#</a>';
+    let button = ''.repeat(indent) + '<a href = "##NAME#-#THEME#" class="link btn btn-#THEME# link-#THEME#">#NAME#</a>';
 
     button = replaceAllOccurrences(button, "#THEME#", theme);
     button = replaceAllOccurrences(button, "#NAME#", name);
