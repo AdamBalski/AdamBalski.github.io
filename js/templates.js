@@ -1,8 +1,16 @@
 const INDENT = 4;
 
+var names = ["article1", "article2", "article3", "article4", "kontakt"];
+var navbar = [true, true, true, true, false];
+var articles = new Map();
+articles.set("index", readTextFile("articles/index-article.html"));
+
+for(let i = 0; i < names.length; i++) {
+    let current = readTextFile("articles/" + names[i] +"-article.html", INDENT);
+    articles.set(names[i], current);
+}
+
 function setContent() {
-    var names = ["article1", "article2", "article3", "article4"];
-    
     let lightContent = getContent(names, "light");
     let darkContent = getContent(names, "dark");
 
@@ -15,7 +23,9 @@ function getContent(names, theme) {
 
     for(i = 0; i < names.length; i++) {
         result = result + getArticle(names[i], theme) + "\n";
-        result = result + getNavbar(theme, names) + "\n";
+        if(navbar[i]) {
+            result = result + getNavbar(theme, names) + "\n";
+        }
     }
 
     return result;
@@ -26,9 +36,10 @@ function getIntroBar(theme, names) {
 }
 
 function getArticle(name , theme) {
-    let content = readTextFile("articles/" + name +"-article.html", INDENT);
+    let content = articles.get(name);
     let result = 
     '<div class="article" id="#NAME#-#THEME#">'  + 
+    '<div class="row col-12" style="height: 15px;"></div>' +
     '#CONTENT#'  + 
     '</div>' ; 
 
