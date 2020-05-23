@@ -39,6 +39,12 @@ function getArticle(name , theme) {
     let content = articles.get(name);
     let result = 
     '<div class="article" id="#NAME#-#THEME#">'  + 
+    '<div class="row col-12">' +
+    '<div class="col-6 col-md-6 col-lg-3" style="height: 40px;"></div>' +
+    '<div class="col-6 col-md-6 col-lg-3" style="height: 40px;"></div>' +
+    '<div class="col-6 col-md-6 col-lg-3" style="height: 40px;"></div>' +
+    '<div class="col-6 col-md-6 col-lg-3" style="height: 40px;"></div>' +
+    '</div>' +
     '<div class="row col-12" style="height: 15px;"></div>' +
     '#CONTENT#'  + 
     '</div>' ; 
@@ -83,15 +89,10 @@ function getNavbar(theme, names) {
     '   <div class="links">  '  + 
     '' + buttons + 
     '   </div>  '  + 
-    '   <div class="theme #ANTI_THEME#-theme">  '  + 
-    '       Motyw:   '  + 
-    '       <button onclick="#ANTI_THEME#()" class="theme-button #ANTI_THEME#-theme-button"></button>  '  + 
-    '   </div>  '  + 
     '</nav>  ';
 
     navbar = replaceAllOccurrences(navbar, "#COLOR#", theme == "dark" ? "#FFF" : "#000");
     navbar = replaceAllOccurrences(navbar, "#THEME#", theme);
-    navbar = replaceAllOccurrences(navbar, "#ANTI_THEME#", theme == "dark" ? "light" : "dark");
 
     return navbar;
 }
