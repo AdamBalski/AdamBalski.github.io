@@ -1,4 +1,4 @@
-var names = ["article1", "article2", "article3", "article4", "kontakt"];
+var names = ["wychodzenie", "tenis", "rower", "chodzenie i chodniki", "kontakt"];
 var navbar = [true, true, true, true, false];
 var articles = new Map();
 articles.set("index", readTextFile("articles/index-article.html"));
@@ -58,12 +58,12 @@ function getNavbar(theme, names) {
     let buttons = getButtons(theme, names, INDENT);
     let navbar =
     '<nav class="navbar navbar-#THEME# nav-links navbar-expand row nav-#THEME#-links">  '  + 
-    '   <button class="btn scroll-icon scroll-#THEME#-icon" onclick="scrollUp();">' +
+    '   <a href = "#html" class="link btn btn-#THEME# link-#THEME#">' +
     '       <svg class="bi bi-arrow-up" width="1em" height="1em" viewBox="0 0 16 16" fill="#COLOR#" xmlns="http://www.w3.org/2000/svg">  '  + 
     '           <path fill-rule="evenodd" d="M8 3.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V4a.5.5 0 01.5-.5z" clip-rule="evenodd"/>  '  + 
     '           <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L8 3.707 5.354 6.354a.5.5 0 11-.708-.708l3-3z" clip-rule="evenodd"/>  '  + 
     '       </svg>  ' +
-    '   </button>' +
+    '   </a>' +
     '   <div class="links">  '  + 
     '' + buttons + 
     '   </div>  '  + 

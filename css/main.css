@@ -72,34 +72,6 @@
     background-color: #343a40 !important;
 }
 
-.scroll-icon {
-    margin-left: 5px;
-    margin-right: 10px;
-    font-weight: 500;
-}
-
-.scroll-light-icon {
-    background-color: #ccc;
-}
-
-.scroll-dark-icon {
-    background-color: #333; 
-}
-
-.scroll-icon:hover {
-    outline-style: auto;
-    outline-width: 2px;
-}
-
-.scroll-light-icon:hover {
-    outline-color: #000;
-}
-
-.scroll-dark-icon:hover {
-    outline-color: #FFF;
-    background-color: #000 !important;
-}
-
 .link {
     margin-left: 5px;
     font-weight: 500;

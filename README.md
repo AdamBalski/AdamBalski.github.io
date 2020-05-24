@@ -19,6 +19,10 @@ Libraries, images and other things I have used to make it:
     * chodnik.jpeg:
         * author: By Bob Ionescu - self-made by author, Attribution, https://commons.wikimedia.org/w/index.php?curid=282769
         * link: <https://pl.wikipedia.org/wiki/Chodnik_(droga)#/media/Plik:Gehweg.jpg>
+* videos:
+    * "Dwór w gałkach":
+        * author: "<https://www.youtube.com/channel/UCJ2VZ6C5FtDjds77jSYlJoQ>"
+        * link: "<https://www.youtube.com/watch?v=Nc0nJhbcad8>"
 * libraries:
     * css:
         * min-bootstrap.sss:

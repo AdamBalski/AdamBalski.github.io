@@ -40,7 +40,7 @@
                 <div class="content col-12 col-md-10" id="light-content"></div>
             </div>
 
-            <div class="col-12 row" style="text-align: center; margin-bottom: 20px;">
+            <div class="col-12 row hide-at-beginning" style="text-align: center; margin-bottom: 20px;">
                 <div class="col-0 col-md-1" style="margin: 10px;"> </div>
                 <p onclick="description();" class="col-2 btn btn-light" style="width: fit-content; margin: 1px; border-radius: 5px; border: solid 2px">
                     Opis projektu
@@ -55,7 +55,7 @@
             </div>
         
             <div class="margin col-0 col-md-1"></div>
-            <div class="col-12 row" style="text-align: center; margin: 0 0 20px 0;">
+            <div class="col-12 row hide-at-beginning" style="text-align: center; margin: 0 0 20px 0;">
                 <div class="col-0 col-md-1" style="margin: 5px;"> </div>
                 <p onclick="mainContent();" class="col-2 btn btn-light" style="width: fit-content; margin: 1px; border-radius: 5px; border: solid 2px">
                     Powróć na stronę
@@ -95,7 +95,7 @@
             </div>
 
             <div class="margin col-0 col-md-1"></div>
-            <div class="col-12 row" style="text-align: center; margin: 0 0 20px 0;">
+            <div class="col-12 row hide-at-beginning" style="text-align: center; margin: 0 0 20px 0;">
                 <div class="col-0 col-md-1" style="margin: 10px;"> </div>
                 <p onclick="description();" class="col-2 btn btn-dark" style="width: fit-content; margin: 1px; border-radius: 5px; border: solid 2px">
                     Opis projektu
@@ -110,7 +110,7 @@
             </div>
         
             <div class="margin col-0 col-md-1"></div>
-            <div class="col-12 row" style="text-align: center; margin-bottom: 20px;">
+            <div class="col-12 row hide-at-beginning" style="text-align: center; margin-bottom: 20px;">
                 <div class="col-0 col-md-1" style="margin: 10px;"> </div>
                 <p onclick="mainContent();" class="col-2 btn btn-dark" style="width: fit-content; margin: 1px; border-radius: 5px; border: solid 2px">
                     Powróć na stronę
@@ -122,6 +122,15 @@
                 <button class="btn btn-dark scroll-up" id="scroll-up-dark"  onclick="scrollUp();">Przewiń w górę</div>
         </nav>
     </div>
+
+    <script>
+        // Those elements are rendered before others, so we are hiding theme for esthetic purposes
+        let hideAtBeginning = document.getElementsByClassName("hide-at-beginning");
+
+        for(let i = 0; i < hideAtBeginning.length; i++) {
+            hideAtBeginning[i].style.display = "none";
+        }
+    </script>
 
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>
@@ -136,6 +145,10 @@
     <script>
         setContent();
         loadDescription();
+
+        for(let i = 0; i < hideAtBeginning.length; i++) {
+            hideAtBeginning[i].style.display = "";
+        }
     </script>
 </body>
 </html>
