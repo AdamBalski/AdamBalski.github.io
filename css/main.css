@@ -132,6 +132,10 @@ svg {
     margin: 0;
 }
 
+.readme-md-wrapper {
+    margin-top: 70px;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }

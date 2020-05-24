@@ -26,7 +26,7 @@
                 <button onclick="dark()" class="theme-button dark-theme-button"></button>
             </div>
         </nav>
-
+        
         <div class="row col-12">
             <div class="col-1 col-sm-3 col-lg-3" style="height: 2px;"></div>
             <div class="col-1 col-sm-3 col-lg-3" style="height: 2px;"></div>
@@ -34,17 +34,34 @@
             <div class="col-1 col-sm-3 col-md-4" style="height: 2px;"></div>
         </div>
 
-        <div class="content-wrapper row col-12">
-            <div class="margin col-0 col-md-1"></div>
-            <div class="content col-12 col-md-10" id="light-content"></div>
+        <div class="main-content">
+            <div class="content-wrapper row col-12">
+                <div class="margin col-0 col-md-1"></div>
+                <div class="content col-12 col-md-10" id="light-content"></div>
+            </div>
+
+            <div class="col-12 row" style="text-align: center; margin-bottom: 20px;">
+                <div class="col-0 col-md-1" style="margin: 10px;"> </div>
+                <p onclick="description();" class="col-2 btn btn-light" style="width: fit-content; margin: 1px; border-radius: 5px; border: solid 2px">
+                    Opis projektu
+                </p>
+            </div>
         </div>
 
-        <a class="col-12 row" href="description.html" style="text-align: center; margin-bottom: 20px;">
-            <div class="col-0 col-md-1" style="margin: 10px;"> </div>
-            <p class="col-2 btn btn-light" style="width: fit-content; margin: 1px; border-radius: 5px; border: #aaa solid 2px">
-                Opis projektu
-            </p>
-        </a>
+        <div class="description">
+            <div class="readme-md-wrapper row col-12">
+                <div class="margin col-0 col-md-1"></div>
+                <div class="README-md col-12 col-md-10"></div>
+            </div>
+        
+            <div class="margin col-0 col-md-1"></div>
+            <div class="col-12 row" style="text-align: center; margin: 0 0 20px 0;">
+                <div class="col-0 col-md-1" style="margin: 5px;"> </div>
+                <p onclick="mainContent();" class="col-2 btn btn-light" style="width: fit-content; margin: 1px; border-radius: 5px; border: solid 2px">
+                    Powróć na stronę
+                </p>
+            </div>
+        </div>
 
         <nav class="navbar navbar-light navbar-expand navbar-scroll-up row">
             <button class="btn btn-light scroll-up" id="scroll-up-light" onclick="scrollUp();">Przewiń w górę</div>
@@ -65,23 +82,41 @@
         </nav>
 
         <div class="row col-12">
-            <div class="col-6 col-md-6 col-lg-3" style="height: 40px;"></div>
-            <div class="col-6 col-md-6 col-lg-3" style="height: 40px;"></div>
-            <div class="col-6 col-md-6 col-lg-3" style="height: 40px;"></div>
-            <div class="col-6 col-md-6 col-lg-3" style="height: 40px;"></div>
+            <div class="col-1 col-sm-3 col-lg-3" style="height: 2px;"></div>
+            <div class="col-1 col-sm-3 col-lg-3" style="height: 2px;"></div>
+            <div class="col-1 col-sm-3 col-lg-3" style="height: 2px;"></div>
+            <div class="col-1 col-sm-3 col-md-4" style="height: 2px;"></div>
         </div>
 
-        <div class="content-wrapper row col-12">
+        <div class="main-content">
+            <div class="content-wrapper row col-12">
+                <div class="margin col-0 col-md-1"></div>
+                <div class="content col-12 col-md-10" id="dark-content"></div>
+            </div>
+
             <div class="margin col-0 col-md-1"></div>
-            <div class="content col-12 col-md-10" id="dark-content"></div>
+            <div class="col-12 row" style="text-align: center; margin: 0 0 20px 0;">
+                <div class="col-0 col-md-1" style="margin: 10px;"> </div>
+                <p onclick="description();" class="col-2 btn btn-dark" style="width: fit-content; margin: 1px; border-radius: 5px; border: solid 2px">
+                    Opis projektu
+                </p>
+            </div>
         </div>
 
-        <a class="col-12 row" href="description.html" style="text-align: center; margin-bottom: 20px;">
-            <div class="col-0 col-md-1" style="margin: 10px;"> </div>
-            <p class="col-2 btn btn-dark" style="width: fit-content; margin: 1px; border-radius: 5px; border: solid 2px">
-                Opis projektu
-            </p>
-        </a>
+        <div class="description">
+            <div class="readme-md-wrapper row col-12">
+                <div class="margin col-0 col-md-1"></div>
+                <div class="README-md col-12 col-md-10"></div>
+            </div>
+        
+            <div class="margin col-0 col-md-1"></div>
+            <div class="col-12 row" style="text-align: center; margin-bottom: 20px;">
+                <div class="col-0 col-md-1" style="margin: 10px;"> </div>
+                <p onclick="mainContent();" class="col-2 btn btn-dark" style="width: fit-content; margin: 1px; border-radius: 5px; border: solid 2px">
+                    Powróć na stronę
+                </p>
+            </div>
+        </div>
 
         <nav class="navbar navbar-dark navbar-expand navbar-scroll-up">
                 <button class="btn btn-dark scroll-up" id="scroll-up-dark"  onclick="scrollUp();">Przewiń w górę</div>
@@ -93,12 +128,14 @@
     <script src="js/min-bootstrap.js"></script>
 
     <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/description.js"></script>
     <script src="js/themes.js"></script>
     <script src="js/templates.js"></script>
-    <script src="js/main.js"></script>
 
     <script>
         setContent();
+        loadDescription();
     </script>
 </body>
 </html>

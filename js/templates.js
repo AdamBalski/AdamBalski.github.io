@@ -1,5 +1,3 @@
-const INDENT = 4;
-
 var names = ["article1", "article2", "article3", "article4", "kontakt"];
 var navbar = [true, true, true, true, false];
 var articles = new Map();
@@ -54,26 +52,6 @@ function getArticle(name , theme) {
     result = replaceAllOccurrences(result, "#CONTENT#", content);
 
     return result + "\n";
-}
-
-function readTextFile(file, indent) {
-    let result;
-
-    let rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function () {
-        if(rawFile.readyState === 4) {
-            if(rawFile.status === 200 || rawFile.status == 0) {
-                result = rawFile.responseText;
-            }
-        }
-    }
-    rawFile.send(null);
-
-    indent = ' '.repeat(indent);
-    content = result.split("\n").join("\n" + indent);
-
-    return indent + content + "\n";
 }
 
 function getNavbar(theme, names) {
