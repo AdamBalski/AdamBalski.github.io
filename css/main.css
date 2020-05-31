@@ -51,7 +51,7 @@
 }
 
 .scroll-up {
-    margin: 4px auto;
+    margin: 4px auto 4px auto;
     align-self: center;
 }
 
@@ -102,6 +102,10 @@
 svg {
     outline-style: hidden;
     margin: 0;
+}
+
+.copyleft {
+    margin: auto 0 auto 20px;
 }
 
 .readme-md-wrapper {

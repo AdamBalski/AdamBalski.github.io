@@ -16,14 +16,16 @@ function scrollDown() {
 }
 
 function makeScrollUpAppear() {
-    var elements = document.getElementsByClassName("navbar-scroll-up");
+    $('.navbar-scroll-up').css('display', 'flex');
+}
 
-    for(i = 0; i < elements.length; i++) {
-        elements[i].style.display = "flex";
-    }
+function makeScrollUpDisappear() {
+    $('.navbar-scroll-up').css('display', 'none');
 }
 
 function description() {
+    makeScrollUpDisappear();
+
     $('.description').css('display', 'block');
     $('.main-content').css('display', 'none');
 

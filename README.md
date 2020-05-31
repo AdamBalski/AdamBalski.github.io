@@ -25,7 +25,7 @@ Libraries, images and other things I have used to make it:
         * link: "<https://www.youtube.com/watch?v=Nc0nJhbcad8>"
 * libraries:
     * css:
-        * min-bootstrap.sss:
+        * min-bootstrap.css:
         <https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css>
     * js:
         * jquery.js:
