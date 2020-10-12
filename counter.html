@@ -1,0 +1,14 @@
+<html>
+<body>
+	raining time left: 
+	<p id="time-left"></p>
+	<script>
+		let end = new Date("2020/10/15 03:00:00");
+		while(true) {
+			let val = new Date(end - new Date());
+			let el = document.getElementById("time-left");
+			el.innerHTML = val;
+		}
+	</script>
+</body>
+</html>
