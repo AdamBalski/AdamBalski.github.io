@@ -4,5 +4,5 @@
     "title-font-size": 25,
     "text-font-size": 18,
     "title": "Płatności",
-    "text": "Nic dziwnego, że coraz więcej płatności dokonuje się w Internecie. Coraz więcej osób to dostrzega i z tego powodu powstają takie serwisy jak stripe, które pozwalają programistom w łatwy sposób wdrażać płatności do stron internetowych. Szczególnie przydatne jest to w przypadku małych firm, których nie stać jest na stworzenie całej infrastruktury. Stripe umożliwia zarządcom stron na łatwy dostęp do wszystkich informacji o płatnościach, a jest to stosunkowo tanie rozwiązanie."
+    "text": "Nic dziwnego, że coraz więcej płatności dokonuje się w Internecie. Coraz więcej osób to dostrzega i z tego powodu powstają takie serwisy jak Stripe, które pozwalają programistom w łatwy sposób wdrażać płatności do stron internetowych. Szczególnie przydatne jest to w przypadku małych firm, których nie stać jest na stworzenie całej infrastruktury. Stripe umożliwia zarządcom stron na łatwy dostęp do wszystkich informacji o płatnościach, a jest to stosunkowo tanie rozwiązanie."
 }
