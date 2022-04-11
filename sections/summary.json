@@ -1,0 +1,8 @@
+{
+  "type": "MAIN",
+  "order": "100",
+  "title-font-size": 25,
+  "text-font-size": 18,
+  "title": "Podsumowanie",
+  "text": "Krótko mówiąc fintech to wszelkiego rodzaju innowacje technologiczne w sektorze finansów, jest on wszędzie tam gdzie jest pieniądze. Dzięki tej branży możemy obserwować wiele ciekawych rozwiązań takich jak neobanki, kryptowaluty, różnego rodzaju platformy do inwestowania na rynku, bądź ułatwienia w implementacji płatności na stronach. Fintech miesza się z różnymi dziedzinami nauki takimi jak np. uczenie maszynowe, które pozwala na analizę i przewidywanie rynku, a mimo to, że branża ta jest nieodłącznie połączona z pieniędzmi, to żeby pracować jako fintech'owy programista, nie trzeba ogromnej wiedzy finansowej."
+}

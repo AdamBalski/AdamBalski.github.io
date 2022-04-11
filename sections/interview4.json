@@ -1,0 +1,8 @@
+{
+  "type": "MAIN",
+  "order": "10",
+  "title-font-size": 25,
+  "text-font-size": 18,
+  "title": "Czym jest i na co pozwala ta platforma?",
+  "text": "Jest to aplikacja webowa, która umożliwia traderom zatrudnionym w Leonteq wgląd w nasze pozycje finansowe w czasie rzeczywistym. Każda pozycja pokazuje szczegółowo, jakie mamy zobowiązania wobec naszych partnerów (banki i inne instytucje finansowe). Oprócz tego, umożliwia wykonywanie kilku transakcji finansowych np borrow/lend/margin call. Aplikacja pokazuje obecnie ponad 5 tysięcy pozycji, na które składa się około 40 milionów transakcji. Każda nowa transakcja powoduje aktualizację pozycji w czasie rzeczywistym."
+}

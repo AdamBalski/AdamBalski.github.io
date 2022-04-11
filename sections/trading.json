@@ -3,6 +3,6 @@
     "order": "4",
     "title-font-size": 25,
     "text-font-size": 18,
-    "title": "Sztuczna inteligencja, uczenie maszynowe oraz inwestowanie",
-    "text": "Żeby inwestować, oprócz wiedzenia gdzie, trzeba też wiedzieć jak. Poza tym, że komputery potrafią obliczać niemalże niezliczoną ilość operacji naraz, to jeszcze jeśli da się im wystarczający zasób informacji, to będą w stanie domyślać się kolejnych danych. Przewidywanie cen akcji w czasie nie jest czymś w czym sztuczna inteligencja jest idealna, ale ma ona coraz lepsze przeczucie na ten temat."
+    "title": "Przewidywanie rynku",
+    "text": "Fintech miesza się z różnymi dziedzinami nauk, np. uczenie maszynowe, które pozwala na analizę i przewidywanie rynku. Jest wiele technik uczenia maszynowego które to umożliwiają. Jedną z takich technik jest regresja liniowa (zdjęcie). Dzięki niej, jeśli będziemy mieć wiele punktów na wykresie, to możemy wyznaczyć funkcję (niekoniecznie liniową), która dopasowywać będzie się do tych punktów, co pozwoli nam na \"przedłużenie tych punktów\" jakąś krzywą. Jeśli wykorzystamy regresję liniową do cen akcji, to możemy postarać się przewidzieć jak te ceny będą zachowywać się w przeszłości."
 }
