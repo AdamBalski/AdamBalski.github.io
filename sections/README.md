@@ -1,1 +1,1 @@
-# Contains the sections of the interview
+# Contains the sections of the article

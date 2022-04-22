@@ -4,5 +4,5 @@
     "title-font-size": 25,
     "text-font-size": 18,
     "title": "Przewidywanie rynku",
-    "text": "Fintech miesza się z różnymi dziedzinami nauk, np. uczenie maszynowe, które pozwala na analizę i przewidywanie rynku. Jest wiele technik uczenia maszynowego które to umożliwiają. Jedną z takich technik jest regresja liniowa (zdjęcie). Dzięki niej, jeśli będziemy mieć wiele punktów na wykresie, to możemy wyznaczyć funkcję (niekoniecznie liniową), która dopasowywać będzie się do tych punktów, co pozwoli nam na \"przedłużenie tych punktów\" jakąś krzywą. Jeśli wykorzystamy regresję liniową do cen akcji, to możemy postarać się przewidzieć jak te ceny będą zachowywać się w przeszłości."
+    "text": "Fintech miesza się z różnymi dziedzinami nauk, np. uczenie maszynowe, które pozwala na analizę i przewidywanie rynku. Jest wiele technik uczenia maszynowego, które to umożliwiają. Jedną z takich technik jest regresja liniowa. Dzięki regresji liniowej, jeśli będziemy mieć wiele punktów na wykresie, to możemy wyznaczyć funkcję (niekoniecznie liniową), która dopasowywać będzie się do tych punktów, co pozwoli nam na \"przedłużenie tych punktów\" jakąś krzywą. Jeśli wykorzystamy regresję liniową do cen akcji, to możemy postarać się przewidzieć, jak te ceny będą zachowywać się w przeszłości."
 }
