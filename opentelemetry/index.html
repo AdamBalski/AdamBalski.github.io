@@ -8,12 +8,51 @@
 </head>
 <body>
     <h1>Journal</h1>
-    <h3>15.11.2023</h4>
-    <h4>Todo</h6>
+    <h3>15.11.2023</h3>
+    <h4>Todo</h4>
     <ul>
         <li>gather project requirements</li>
         <li>do a high level system design sketch/overview</li>
         <li>choose tech accordingly to what makes sense</li>
+    </ul>
+    <h4>Project requirements</h4>
+    <ul>
+        <li>pull data about quality of air in Poland (captured at various schools (1471 stations as of 15.11.2023 18:11)): https://public-esa.ose.gov.pl/api/v1/smog</li>
+        <li>save historical data to a db</li>
+        <li>cache data for a period of a day since the last pull</li>
+        <li>various get endpoints should return cached data, if data not in cache then pull from the database</li>
+        <li>'force pull from the api' endpoint (authorized)</li>
+        <li>READ heavy db -> replicas</li>
+        <li>a CRON job should be run each 5min to pull latest data</li>
+        <li>paginated responses</li>
+        <li>endpoints for computing running averages, based on running sums</li>
+        <li>easily traceable</li>
+        <li>hit count</li>
+        <li>using tech compliant with the opentelemetry specification</li>
+    </ul>
+    <h4>System design sketch (click to zoom)</h4>
+    <div class="fancyPositioning">
+        <div class="pictureLeft">
+            <figure>
+                <a href="./icepanel-c4-diagram.png" target="_blank">
+                    <img style="max-width: 120%" src="./icepanel-c4-diagram.png" alt="icepanel.io c4 diagram of high level system design sketch"/>
+                </a>
+                <figcaption>
+                    <a style="font-size: x-large;" href="./icepanel-c4-diagram.png" target="_blank">zoom</a>;
+                    C4 diagram created using <a href="https://icepanel.io" target="_blank">icepanel.io</a>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <h4>Tech, list will be updated, edit timestamps will be attached</h4>
+    <ul>
+        <li>vertx for microservices (java lib)</li>
+        <li>docker and docker compose for orchestration</li>
+        <li>prometheus for observing metrics</li>
+        <li>zipkin or jaeger for tracing (I have yet to decide, but currently I'm leaning in the direction of jaeger)</li>
+        <li>gRPC for inter-microservices communication</li>
+        <li>postgreSQL</li>
     </ul>
 </body>
 </html>
